@@ -1,0 +1,22 @@
+
+########################################################################################################################
+# HPGL output devices
+########################################################################################################################
+
+[device.hp7595a]
+name = "hp7595a"
+plotter_unit_length = "0.02488mm"
+pen_count = 8
+
+[[device.hp7595a.paper]]
+name = "letter"
+aka_names = ["Letter"]
+info = "Letter mode is assumed landscape"
+paper_size = ["11in", "8.5in"]
+x_range = [-4844, 4844]
+y_range = [-3177, 3177]
+y_axis_up = true
+origin_location = ["5.5in", "4.25in"]
+final_pu_params = "0,0"
+set_ps = 4
+
