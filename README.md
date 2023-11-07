@@ -4,9 +4,36 @@ This repository contains code and instructions for operating the drawing machine
 
 ## Long instructions are boring, I want to plot something
 
+- Prequisite
+  - A working python 3.  Can be a conda, or a system python.
+
 - Plot a precreated file
-  - On a modern linux, git clone this repo
+  - Linux
+  - check if you are in the dialout group
+  ```
+  groups
+  ```
+  - if dialout is not listed, add it with 
+  ```
+  sudo usermod -a -G dialout user
+  ```
+  logout login may be required
+  - git clone this repo
+  ```
+  git clone git@github.com:FOULAB/DrawingMachines.git
+  ```
+  - Build an environment with the necessary code
+  ```
+  ./build_environment.sh <environment_name>
+  ```
+  - Activate this environment
+  ```
+  . environment_name/bin/activate
+  ```
   - Probe the plotter
+  ```
+  python 
+  ```
   - Load paper and pen
   - Run the test and plot the test file
 - Create a file and plot it
