@@ -21,4 +21,5 @@ fi
 python -m venv "$1"
 . "$1"/bin/activate
 pip install --upgrade pip
-pip install Chiplotle3 vpype vpype-ttf 
+# once PR merged and pip uploaded can replace git below with just Chiplotle3
+pip install git+https://github.com/str4w/chiplotle3.git vpype vpype-ttf 
