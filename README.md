@@ -2,7 +2,9 @@
 This repository contains code and instructions for operating the drawing machines at Foulab, mainly the plotters.
 
 
-## Long instructions are boring, I want to plot something
+# TL;DR
+
+Long instructions are boring, and my attention span is short.  I want to plot something right now.
 
 - Prequisite
   - A working python 3.  Can be a conda, or a system python.
@@ -22,25 +24,41 @@ This repository contains code and instructions for operating the drawing machine
   ```
   git clone git@github.com:FOULAB/DrawingMachines.git
   ```
-  - Build an environment with the necessary code
+  - Build a python environment with the necessary code
   ```
   ./build_environment.sh <environment_name>
   ```
   - Activate this environment
   ```
-  . environment_name/bin/activate
+  . <environment_name>/bin/activate
   ```
+  - Connect the plotter
+  
+  Most plotters are driven over serial, using an interface wired in a nonstandard way. For the large HP at Foulab, this is prepared for you.  
+
+  INSERT PHOTOGRAPH
+  
   - Probe the plotter
   ```
-  python 
+  chiplotle3
   ```
   - Load paper and pen
+
+  INSERT PHOTOGRAPHS
+
   - Run the test and plot the test file
+  ```
+  plot_hpgl_file 
+  ```
+  - Rejoice, you have plotted a drawing!
 - Create a file and plot it
   - Run this notebook, download the resulting file
   - Plot the resulting file
+  - Rejoice more, you have algorithmically created, and then plotted a drawing!
 
-Rejoice, you have plotted a drawing!
+# Detailed Discussion
+
+In the following discussion, we will work from closest to the paper to greater and greater levels of abs
 
 ## Driving the plotter
 
