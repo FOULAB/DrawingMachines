@@ -1,0 +1,29 @@
+[device.dxy885]
+name = "Roland DXY-885"
+plotter_unit_length = "0.02489mm"
+pen_count = 8
+
+[[device.dxy885.paper]]
+name = "b"
+aka_names = ["tabloid", "ansi_b"]
+info = "The switch must be in ansi mode. The drawing offset is from bottom left."
+paper_size = ["17in", "258mm"]
+x_range = [0, 16640]
+y_range = [0, 10365]
+y_axis_up = true
+origin_location = ["0mm", "0mm"]
+origin_location_reference = "botleft"
+final_pu_params = "16000,10000"
+
+[[device.dxy885.paper]]
+name = "a3"
+aka_names = ["A3"]
+info = "The switch must be in iso mode. The drawing offset is from bottom left."
+paper_size = ["420mm", "297mm"]
+x_range = [0, 16800]
+y_range = [0, 11880]
+y_axis_up = true
+origin_location = ["0mm", "0mm"]
+origin_location_reference = "botleft"
+final_pu_params = "1r67000,11000"
+
